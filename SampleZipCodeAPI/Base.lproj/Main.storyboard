@@ -30,7 +30,13 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="STE-me-4CE" secondAttribute="trailing" id="z8r-Qn-CYp"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="連絡先" id="jj3-gm-BXv"/>
+                    <navigationItem key="navigationItem" title="連絡先" id="jj3-gm-BXv">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="iJs-8v-7SE">
+                            <connections>
+                                <action selector="didTapAddButton:" destination="BYZ-38-t0r" id="wSv-Ds-pzh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="STE-me-4CE" id="XF6-Lh-cSa"/>
                     </connections>
@@ -59,6 +65,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

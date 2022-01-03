@@ -20,6 +20,10 @@ final class PersonalInfoListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    @IBAction private func didTapAddButton(_ sender: UIBarButtonItem) {
+        modalTransition(to: RegisterViewController.className)
+    }
 }
 
 extension PersonalInfoListViewController: UITableViewDataSource {
