@@ -11,8 +11,7 @@ final class PersonalInfoListViewController: UIViewController {
     
     @IBOutlet private weak var tableView: UITableView! {
         didSet {
-            let nib = UINib(nibName: PersonalInfoView.className, bundle: nil)
-            tableView.register(nib, forCellReuseIdentifier: PersonalInfoView.className)
+            tableView.register(cellType: PersonalInfoView.self)
             tableView.dataSource = self
         }
     }
