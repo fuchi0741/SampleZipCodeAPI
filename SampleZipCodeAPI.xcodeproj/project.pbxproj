@@ -22,6 +22,8 @@
 		C5F9307B2783176D00FE16B9 /* RegisterViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5F9307A2783176D00FE16B9 /* RegisterViewController.storyboard */; };
 		C5F930802783188D00FE16B9 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F9307F2783188D00FE16B9 /* UIViewController+.swift */; };
 		C5F930952785CBA500FE16B9 /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F930942785CBA500FE16B9 /* UITableView+.swift */; };
+		C5F9309A2789818D00FE16B9 /* InputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F930992789818D00FE16B9 /* InputTextView.swift */; };
+		C5F9309F2789819E00FE16B9 /* InputTextView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5F9309E2789819E00FE16B9 /* InputTextView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		C5F9307A2783176D00FE16B9 /* RegisterViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterViewController.storyboard; sourceTree = "<group>"; };
 		C5F9307F2783188D00FE16B9 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		C5F930942785CBA500FE16B9 /* UITableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
+		C5F930992789818D00FE16B9 /* InputTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextView.swift; sourceTree = "<group>"; };
+		C5F9309E2789819E00FE16B9 /* InputTextView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputTextView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +174,8 @@
 			children = (
 				C5F930662783107D00FE16B9 /* PersonalInfoView.swift */,
 				C5F930672783107D00FE16B9 /* PersonalInfoView.xib */,
+				C5F930992789818D00FE16B9 /* InputTextView.swift */,
+				C5F9309E2789819E00FE16B9 /* InputTextView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -288,6 +294,7 @@
 				C5F9303027830BDF00FE16B9 /* LaunchScreen.storyboard in Resources */,
 				C5F9307B2783176D00FE16B9 /* RegisterViewController.storyboard in Resources */,
 				C5F9302D27830BDF00FE16B9 /* Assets.xcassets in Resources */,
+				C5F9309F2789819E00FE16B9 /* InputTextView.xib in Resources */,
 				C5F9302B27830BDF00FE16B9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,6 +326,7 @@
 				C5F930682783107D00FE16B9 /* PersonalInfoView.swift in Sources */,
 				C5F9302827830BDF00FE16B9 /* PersonalInfoListViewController.swift in Sources */,
 				C5F930762783176200FE16B9 /* RegisterViewController.swift in Sources */,
+				C5F9309A2789818D00FE16B9 /* InputTextView.swift in Sources */,
 				C5F9302427830BDF00FE16B9 /* AppDelegate.swift in Sources */,
 				C5F9302627830BDF00FE16B9 /* SceneDelegate.swift in Sources */,
 			);

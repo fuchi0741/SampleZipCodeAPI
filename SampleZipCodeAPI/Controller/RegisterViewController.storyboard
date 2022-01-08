@@ -15,8 +15,32 @@
                     <view key="view" contentMode="scaleToFill" id="R1L-5G-pX9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zSY-pC-Idl" customClass="InputTextView" customModule="SampleZipCodeAPI" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="74" width="414" height="360"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="360" id="Pej-na-nUF"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TOp-Jf-FVm">
+                                <rect key="frame" x="0.0" y="454" width="414" height="50"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Qy0-gg-ODV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="C0Z-ax-Dmj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zSY-pC-Idl" firstAttribute="leading" secondItem="C0Z-ax-Dmj" secondAttribute="leading" id="5uK-0c-9l7"/>
+                            <constraint firstItem="zSY-pC-Idl" firstAttribute="top" secondItem="C0Z-ax-Dmj" secondAttribute="top" constant="30" id="EiH-To-z1g"/>
+                            <constraint firstItem="TOp-Jf-FVm" firstAttribute="leading" secondItem="C0Z-ax-Dmj" secondAttribute="leading" id="MnV-uL-daw"/>
+                            <constraint firstItem="C0Z-ax-Dmj" firstAttribute="trailing" secondItem="zSY-pC-Idl" secondAttribute="trailing" id="ZQa-Nc-8JT"/>
+                            <constraint firstItem="TOp-Jf-FVm" firstAttribute="top" secondItem="zSY-pC-Idl" secondAttribute="bottom" constant="20" id="dZC-Eu-RDq"/>
+                            <constraint firstItem="TOp-Jf-FVm" firstAttribute="trailing" secondItem="C0Z-ax-Dmj" secondAttribute="trailing" id="gmG-2d-nU4"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fwd-SZ-pbU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
