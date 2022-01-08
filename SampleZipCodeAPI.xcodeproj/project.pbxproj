@@ -24,6 +24,8 @@
 		C5F930952785CBA500FE16B9 /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F930942785CBA500FE16B9 /* UITableView+.swift */; };
 		C5F9309A2789818D00FE16B9 /* InputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F930992789818D00FE16B9 /* InputTextView.swift */; };
 		C5F9309F2789819E00FE16B9 /* InputTextView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5F9309E2789819E00FE16B9 /* InputTextView.xib */; };
+		C5F930B127898C6C00FE16B9 /* RegisterButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F930B027898C6C00FE16B9 /* RegisterButtonView.swift */; };
+		C5F930B627898C7B00FE16B9 /* RegisterButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5F930B527898C7B00FE16B9 /* RegisterButtonView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		C5F930942785CBA500FE16B9 /* UITableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
 		C5F930992789818D00FE16B9 /* InputTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextView.swift; sourceTree = "<group>"; };
 		C5F9309E2789819E00FE16B9 /* InputTextView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputTextView.xib; sourceTree = "<group>"; };
+		C5F930B027898C6C00FE16B9 /* RegisterButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterButtonView.swift; sourceTree = "<group>"; };
+		C5F930B527898C7B00FE16B9 /* RegisterButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterButtonView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +180,8 @@
 				C5F930672783107D00FE16B9 /* PersonalInfoView.xib */,
 				C5F930992789818D00FE16B9 /* InputTextView.swift */,
 				C5F9309E2789819E00FE16B9 /* InputTextView.xib */,
+				C5F930B027898C6C00FE16B9 /* RegisterButtonView.swift */,
+				C5F930B527898C7B00FE16B9 /* RegisterButtonView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -292,6 +298,7 @@
 			files = (
 				C5F930692783107D00FE16B9 /* PersonalInfoView.xib in Resources */,
 				C5F9303027830BDF00FE16B9 /* LaunchScreen.storyboard in Resources */,
+				C5F930B627898C7B00FE16B9 /* RegisterButtonView.xib in Resources */,
 				C5F9307B2783176D00FE16B9 /* RegisterViewController.storyboard in Resources */,
 				C5F9302D27830BDF00FE16B9 /* Assets.xcassets in Resources */,
 				C5F9309F2789819E00FE16B9 /* InputTextView.xib in Resources */,
@@ -323,6 +330,7 @@
 				C5F930802783188D00FE16B9 /* UIViewController+.swift in Sources */,
 				C5F930952785CBA500FE16B9 /* UITableView+.swift in Sources */,
 				C5F930712783114000FE16B9 /* NSObject+.swift in Sources */,
+				C5F930B127898C6C00FE16B9 /* RegisterButtonView.swift in Sources */,
 				C5F930682783107D00FE16B9 /* PersonalInfoView.swift in Sources */,
 				C5F9302827830BDF00FE16B9 /* PersonalInfoListViewController.swift in Sources */,
 				C5F930762783176200FE16B9 /* RegisterViewController.swift in Sources */,

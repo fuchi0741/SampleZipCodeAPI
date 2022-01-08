@@ -1,0 +1,42 @@
+//
+//  RegisterButtonView.swift
+//  SampleZipCodeAPI
+//
+//  Created by 渕一真 on 2022/01/08.
+//
+
+import UIKit
+
+final class RegisterButtonView: UIView {
+    
+    @IBOutlet private var buttons: [UIButton]!
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        loadNib()
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        loadNib()
+    }
+
+    private func loadNib() {
+        guard let view = Bundle.main.loadNibNamed(RegisterButtonView.className, owner: self, options: nil)?.first as? UIView else { return }
+        view.frame = self.bounds
+        setup()
+        self.addSubview(view)
+    }
+
+    private func setup() {
+       setupButtons()
+    }
+    
+    private func setupButtons() {
+        buttons.forEach {
+            $0.layer.cornerRadius = 6.0
+            $0.layer.borderWidth = 1.0
+            $0.layer.borderColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
+        }
+    }
+}

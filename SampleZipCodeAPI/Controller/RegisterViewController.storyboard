@@ -23,7 +23,7 @@
                                     <constraint firstAttribute="height" constant="360" id="Pej-na-nUF"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TOp-Jf-FVm">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TOp-Jf-FVm" customClass="RegisterButtonView" customModule="SampleZipCodeAPI" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="454" width="414" height="50"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
