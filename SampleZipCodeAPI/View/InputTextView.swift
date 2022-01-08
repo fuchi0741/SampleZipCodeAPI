@@ -8,7 +8,15 @@
 import UIKit
 
 final class InputTextView: UIView {
-
+    
+    @IBOutlet private weak var nameTextFiled: UITextField!
+    @IBOutlet private weak var phoneNumTextField: UITextField!
+    @IBOutlet private weak var zipCodeTextField: UITextField!
+    @IBOutlet private weak var mainAddressTextField: UITextField!
+    @IBOutlet private weak var subAddressTextField: UITextField!
+    @IBOutlet private weak var errorMessageLabel: UILabel!
+    @IBOutlet private weak var searchAddressButton: UIButton!
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         loadNib()
@@ -18,7 +26,11 @@ final class InputTextView: UIView {
         super.init(coder: aDecoder)
         loadNib()
     }
-
+    
+    @IBAction private func didTapSearchAddressButton(_ sender: UIButton) {
+        
+    }
+    
     private func loadNib() {
         guard let view = Bundle.main.loadNibNamed(InputTextView.className, owner: self, options: nil)?.first as? UIView else { return }
         view.frame = self.bounds
@@ -27,6 +39,7 @@ final class InputTextView: UIView {
     }
 
     private func setup() {
-       
+        errorMessageLabel.isHidden = true
+        searchAddressButton.layer.cornerRadius = 6.0
     }
 }

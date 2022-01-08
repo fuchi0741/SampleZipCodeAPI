@@ -42,6 +42,10 @@
                             <constraint firstItem="TOp-Jf-FVm" firstAttribute="trailing" secondItem="C0Z-ax-Dmj" secondAttribute="trailing" id="gmG-2d-nU4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="inputTextView" destination="zSY-pC-Idl" id="Zcd-tv-app"/>
+                        <outlet property="registerView" destination="TOp-Jf-FVm" id="HvA-3A-BWZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fwd-SZ-pbU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

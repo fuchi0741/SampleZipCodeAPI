@@ -9,6 +9,9 @@ import UIKit
 
 final class RegisterButtonView: UIView {
     
+    var registerButtonBlock: (() -> Void)?
+    var cancelButtonBlock: (() -> Void)?
+    
     @IBOutlet private var buttons: [UIButton]!
 
     override init(frame: CGRect) {
@@ -19,6 +22,14 @@ final class RegisterButtonView: UIView {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         loadNib()
+    }
+    
+    @IBAction private func didTapRegisterButton(_ sender: UIButton) {
+        registerButtonBlock?()
+    }
+    
+    @IBAction private func didTapCancelButton(_ sender: UIButton) {
+        cancelButtonBlock?()
     }
 
     private func loadNib() {
