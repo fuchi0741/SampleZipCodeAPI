@@ -18,6 +18,7 @@ final class PersonalInfoListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        ZipCodeManager.fetchAddress(zipCode: "0790177")
     }
     
     @IBAction private func didTapAddButton(_ sender: UIBarButtonItem) {
