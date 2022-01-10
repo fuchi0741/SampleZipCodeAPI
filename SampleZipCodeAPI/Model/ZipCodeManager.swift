@@ -19,6 +19,18 @@ struct ZipCodeManager {
                 
         guard let requestURL = urlComponents.url else { return }
         
+        let task2 = URLSession.shared.dataTask(with: requestURL, completionHandler: { data, response, error in
+            print("レスポンスが返ってきてきてから実行")
+            
+            print("😆", data)
+            let dataString = String(data: data!, encoding: .utf8)
+            print("😓", dataString)
+            
+            print("✊", response)
+            
+            print("💡", error)
+        })
+        
         let task = URLSession.shared.dataTask(with: requestURL) { data, response, error in
             print("レスポンスが返ってきてきてから実行")
             
