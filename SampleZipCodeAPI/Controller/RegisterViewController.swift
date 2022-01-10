@@ -14,7 +14,14 @@ final class RegisterViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        searchAddress()
         setupRegister()
+    }
+    
+    private func searchAddress() {
+        inputTextView.searchAddressBlock = { zipCode in
+            ZipCodeManager.fetchAddress(zipCode: zipCode)
+        }
     }
     
     private func setupRegister() {

@@ -9,6 +9,8 @@ import UIKit
 
 final class InputTextView: UIView {
     
+    var searchAddressBlock: ((String) -> Void)? 
+    
     @IBOutlet private weak var nameTextFiled: UITextField!
     @IBOutlet private weak var phoneNumTextField: UITextField!
     @IBOutlet private weak var zipCodeTextField: UITextField!
@@ -28,7 +30,8 @@ final class InputTextView: UIView {
     }
     
     @IBAction private func didTapSearchAddressButton(_ sender: UIButton) {
-        
+        guard let zipCodeText = zipCodeTextField.text else { return }
+        searchAddressBlock?(zipCodeText)
     }
     
     private func loadNib() {
