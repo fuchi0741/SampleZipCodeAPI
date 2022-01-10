@@ -8,18 +8,19 @@
 import Foundation
 
 struct AddressEntity: Decodable {
-    let status: Int
-    let message: String?
-    let results: [Results]?
+    let statusCode: Int
+    let errorMessage: String?
+    let address: [Address]?
+    
+    enum CodingKeys: String, CodingKey {
+        case statusCode = "status"
+        case errorMessage = "message"
+        case address = "results"
+    }
 }
 
-struct Results: Decodable {
+struct Address: Decodable {
     let address1: String
     let address2: String
     let address3: String
-    let kana1: String
-    let kana2: String
-    let kana3: String
-    let prefcode: String
-    let zipcode: String
 }

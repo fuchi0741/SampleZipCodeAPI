@@ -29,9 +29,9 @@ struct ZipCodeManager {
             
             do {
                 let entity = try JSONDecoder().decode(AddressEntity.self, from: jsonData)
-                print(entity)
+                print("😆", entity)
             } catch {
-                print(error.localizedDescription)
+                print("😱", error.localizedDescription)
             }
         }
         
