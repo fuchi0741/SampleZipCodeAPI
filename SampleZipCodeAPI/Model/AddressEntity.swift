@@ -7,13 +7,13 @@
 
 import Foundation
 
-struct AddressEntity {
+struct AddressEntity: Decodable {
     let status: Int
     let message: String?
     let results: [Results]?
 }
 
-struct Results {
+struct Results: Decodable {
     let address1: String
     let address2: String
     let address3: String
