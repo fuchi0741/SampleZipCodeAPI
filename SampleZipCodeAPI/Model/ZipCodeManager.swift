@@ -19,7 +19,11 @@ struct ZipCodeManager {
                 
         guard let requestURL = urlComponents.url else { return }
         
-        let task = URLSession.shared.dataTask(with: requestURL) { jsonData, response, error in
+        let task = URLSession.shared.dataTask(with: requestURL) { jsonData, _, error in
+            
+            if let error = error {
+                print(error.localizedDescription)
+            }
             
             guard let jsonData = jsonData else { return }
             
