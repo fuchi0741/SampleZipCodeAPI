@@ -19,8 +19,12 @@ final class RegisterViewController: UIViewController {
     }
     
     private func searchAddress() {
-        inputTextView.searchAddressBlock = { zipCode in
-            ZipCodeManager.fetchAddress(zipCode: zipCode)
+        inputTextView.searchAddressBlock = { [weak self] zipCode in
+            guard let self = self else { return }
+            
+//            ZipCodeManager.fetchAddress(zipCode: zipCode)
+            ZipCodeManager.同期処理()
+            self.inputTextView.setAddressFromZipCode()
         }
     }
     

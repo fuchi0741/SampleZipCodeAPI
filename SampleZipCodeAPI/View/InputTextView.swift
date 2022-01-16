@@ -29,6 +29,10 @@ final class InputTextView: UIView {
         loadNib()
     }
     
+    func setAddressFromZipCode() {
+        print("mainAddressTextFieldのtextプロパティにレスポンスで帰ってきた値を入れる")
+    }
+    
     @IBAction private func didTapSearchAddressButton(_ sender: UIButton) {
         guard let zipCodeText = zipCodeTextField.text else { return }
         searchAddressBlock?(zipCodeText)

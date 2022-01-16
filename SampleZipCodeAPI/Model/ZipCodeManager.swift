@@ -8,6 +8,16 @@
 import Foundation
 
 struct ZipCodeManager {
+    static func 同期処理() {
+        print("リクエスト")
+        
+        
+        
+        
+        
+        print("レスポンス")
+    }
+    
     static func fetchAddress(zipCode: String) {
         let baseURL = "https://zipcloud.ibsnet.co.jp/api/search"
          
@@ -19,8 +29,9 @@ struct ZipCodeManager {
                 
         guard let requestURL = urlComponents.url else { return }
         
+        
         let task = URLSession.shared.dataTask(with: requestURL) { jsonData, _, error in
-            
+            print("レスポンス")
             if let error = error {
                 print(error.localizedDescription)
             }
@@ -34,7 +45,7 @@ struct ZipCodeManager {
                 print("😱", error.localizedDescription)
             }
         }
-        
+        print("リクエスト")
         task.resume()
     }
 }
