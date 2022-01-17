@@ -8,17 +8,7 @@
 import Foundation
 
 struct ZipCodeManager {
-    static func 同期処理() {
-        print("リクエスト")
-        
-        
-        
-        
-        
-        print("レスポンス")
-    }
-    
-    static func fetchAddress(zipCode: String) {
+    static func fetchAddress(zipCode: String, completion: @escaping () -> Void) {
         let baseURL = "https://zipcloud.ibsnet.co.jp/api/search"
          
         guard var urlComponents = URLComponents(string: baseURL) else { return }
@@ -40,6 +30,7 @@ struct ZipCodeManager {
             
             do {
                 let entity = try JSONDecoder().decode(AddressEntity.self, from: jsonData)
+                completion()
                 print("😆", entity)
             } catch {
                 print("😱", error.localizedDescription)
