@@ -30,8 +30,14 @@ final class InputTextView: UIView {
     }
     
     func setAddressFromZipCode(entity: AddressEntity) {
-        print("😓", entity)
-        print("mainAddressTextFieldのtextプロパティにレスポンスで帰ってきた値を入れる")
+        guard let address = entity.address?.first else { return }
+        
+        let mainAddress = address.address1 + address.address2 + address.address3
+        
+        DispatchQueue.main.async { [weak self] in
+            guard let self = self else { return }
+            self.mainAddressTextField.text = mainAddress
+        }
     }
     
     @IBAction private func didTapSearchAddressButton(_ sender: UIButton) {

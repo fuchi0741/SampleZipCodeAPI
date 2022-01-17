@@ -21,7 +21,6 @@ struct ZipCodeManager {
         
         
         let task = URLSession.shared.dataTask(with: requestURL) { jsonData, _, error in
-            print("レスポンス")
             if let error = error {
                 print(error.localizedDescription)
             }
@@ -31,12 +30,10 @@ struct ZipCodeManager {
             do {
                 let entity = try JSONDecoder().decode(AddressEntity.self, from: jsonData)
                 completion(entity)
-                print("😆", entity)
             } catch {
                 print("😱", error.localizedDescription)
             }
         }
-        print("リクエスト")
         task.resume()
     }
 }
