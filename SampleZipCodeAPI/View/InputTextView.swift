@@ -29,7 +29,8 @@ final class InputTextView: UIView {
         loadNib()
     }
     
-    func setAddressFromZipCode() {
+    func setAddressFromZipCode(entity: AddressEntity) {
+        print("😓", entity)
         print("mainAddressTextFieldのtextプロパティにレスポンスで帰ってきた値を入れる")
     }
     
