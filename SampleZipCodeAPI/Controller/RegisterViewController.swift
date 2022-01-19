@@ -30,9 +30,9 @@ final class RegisterViewController: UIViewController {
                 case 200:
                     self.inputTextView.setAddressFromZipCode(entity: addressEntity)
                 case 400:
-                    self.inputTextView.setErrorMessage(text: "郵便番号を7桁の数字で入力してください。")
+                    self.inputTextView.setErrorMessage(text: ErrorMessageType.invalidInputText.rawValue)
                 case 500:
-                    self.inputTextView.setErrorMessage(text: "システムメンテナンス中です。時間をおいてお試しください。")
+                    self.inputTextView.setErrorMessage(text: ErrorMessageType.systemError.rawValue)
                 default:
                     print("想定外のステータスコード")
                 }

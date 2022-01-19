@@ -28,6 +28,7 @@
 		C5F930B627898C7B00FE16B9 /* RegisterButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5F930B527898C7B00FE16B9 /* RegisterButtonView.xib */; };
 		C5F930EF278A631D00FE16B9 /* ZipCodeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F930EE278A631D00FE16B9 /* ZipCodeManager.swift */; };
 		C5F931AC278C688B00FE16B9 /* AddressEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F931AB278C688B00FE16B9 /* AddressEntity.swift */; };
+		C5F9326D2798790500FE16B9 /* ErrorMessageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F9326C2798790500FE16B9 /* ErrorMessageType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		C5F930B527898C7B00FE16B9 /* RegisterButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterButtonView.xib; sourceTree = "<group>"; };
 		C5F930EE278A631D00FE16B9 /* ZipCodeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipCodeManager.swift; sourceTree = "<group>"; };
 		C5F931AB278C688B00FE16B9 /* AddressEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressEntity.swift; sourceTree = "<group>"; };
+		C5F9326C2798790500FE16B9 /* ErrorMessageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessageType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 				C5F930642783103500FE16B9 /* View */,
 				C5F930632783103000FE16B9 /* Controller */,
 				C5F930622783102900FE16B9 /* Extensions */,
+				C5F9326B279878DF00FE16B9 /* Common */,
 				C5F9302327830BDF00FE16B9 /* AppDelegate.swift */,
 				C5F9302527830BDF00FE16B9 /* SceneDelegate.swift */,
 				C5F9302927830BDF00FE16B9 /* Main.storyboard */,
@@ -197,6 +200,14 @@
 				C5F931AB278C688B00FE16B9 /* AddressEntity.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		C5F9326B279878DF00FE16B9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C5F9326C2798790500FE16B9 /* ErrorMessageType.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,6 +354,7 @@
 				C5F9302827830BDF00FE16B9 /* PersonalInfoListViewController.swift in Sources */,
 				C5F930762783176200FE16B9 /* RegisterViewController.swift in Sources */,
 				C5F9309A2789818D00FE16B9 /* InputTextView.swift in Sources */,
+				C5F9326D2798790500FE16B9 /* ErrorMessageType.swift in Sources */,
 				C5F9302427830BDF00FE16B9 /* AppDelegate.swift in Sources */,
 				C5F9302627830BDF00FE16B9 /* SceneDelegate.swift in Sources */,
 			);
