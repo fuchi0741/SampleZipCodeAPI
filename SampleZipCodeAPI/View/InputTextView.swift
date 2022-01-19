@@ -36,7 +36,16 @@ final class InputTextView: UIView {
         
         DispatchQueue.main.async { [weak self] in
             guard let self = self else { return }
+            self.errorMessageLabel.isHidden = true
             self.mainAddressTextField.text = mainAddress
+        }
+    }
+    
+    func setErrorMessage(text: String) {
+        DispatchQueue.main.async { [weak self] in
+            guard let self = self else { return }
+            self.errorMessageLabel.text = text
+            self.errorMessageLabel.isHidden = false
         }
     }
     
