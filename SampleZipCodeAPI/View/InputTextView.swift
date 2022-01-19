@@ -30,7 +30,10 @@ final class InputTextView: UIView {
     }
     
     func setAddressFromZipCode(entity: AddressEntity) {
-        guard let address = entity.address?.first else { return }
+        guard let address = entity.address?.first else {
+            setErrorMessage(text: "一致する住所が存在しません。")
+            return
+        }
         
         let mainAddress = address.address1 + address.address2 + address.address3
         
