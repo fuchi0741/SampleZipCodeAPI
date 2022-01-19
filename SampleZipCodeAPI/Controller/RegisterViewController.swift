@@ -9,11 +9,14 @@ import UIKit
 
 final class RegisterViewController: UIViewController {
     
+    private let indicator = UIActivityIndicatorView()
+    
     @IBOutlet private weak var inputTextView: InputTextView!
     @IBOutlet private weak var registerView: RegisterButtonView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupIndicator()
         searchAddress()
         setupRegister()
     }
@@ -22,8 +25,15 @@ final class RegisterViewController: UIViewController {
         inputTextView.searchAddressBlock = { [weak self] zipCode in
             guard let self = self else { return }
             
+            self.indicator.startAnimating()
+            
             ZipCodeManager.fetchAddress(zipCode: zipCode) { [weak self] addressEntity in
                 guard let self = self else { return }
+                
+                DispatchQueue.main.async { [weak self] in
+                    guard let self = self else { return }
+                    self.indicator.stopAnimating()
+                }
                 
                 let statusCode = addressEntity.statusCode
                 switch statusCode {
@@ -52,5 +62,12 @@ final class RegisterViewController: UIViewController {
             
             self.dismiss(animated: true, completion: nil)
         }
+    }
+    
+    private func setupIndicator() {
+        indicator.center = view.center
+        indicator.style = .large
+        indicator.color = .gray
+        view.addSubview(indicator)
     }
 }
