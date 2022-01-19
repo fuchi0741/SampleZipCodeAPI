@@ -24,7 +24,18 @@ final class RegisterViewController: UIViewController {
             
             ZipCodeManager.fetchAddress(zipCode: zipCode) { [weak self] addressEntity in
                 guard let self = self else { return }
-                self.inputTextView.setAddressFromZipCode(entity: addressEntity)
+                
+                let statusCode = addressEntity.statusCode
+                switch statusCode {
+                case 200:
+                    self.inputTextView.setAddressFromZipCode(entity: addressEntity)
+                case 400:
+                    print("ステータスコードが400のとき")
+                case 500:
+                    print("ステータスコードが500のとき")
+                default:
+                    print("想定外のステータスコード")
+                }
             }
         }
     }
