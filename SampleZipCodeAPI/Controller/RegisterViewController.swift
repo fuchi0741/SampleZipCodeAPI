@@ -16,7 +16,7 @@ final class RegisterViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupIndicator()
+        IndicatorManager.prepare(at: indicator, in: view)
         searchAddress()
         setupRegister()
     }
@@ -62,12 +62,5 @@ final class RegisterViewController: UIViewController {
             
             self.dismiss(animated: true, completion: nil)
         }
-    }
-    
-    private func setupIndicator() {
-        indicator.center = view.center
-        indicator.style = .large
-        indicator.color = .gray
-        view.addSubview(indicator)
     }
 }

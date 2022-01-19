@@ -29,6 +29,7 @@
 		C5F930EF278A631D00FE16B9 /* ZipCodeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F930EE278A631D00FE16B9 /* ZipCodeManager.swift */; };
 		C5F931AC278C688B00FE16B9 /* AddressEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F931AB278C688B00FE16B9 /* AddressEntity.swift */; };
 		C5F9326D2798790500FE16B9 /* ErrorMessageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F9326C2798790500FE16B9 /* ErrorMessageType.swift */; };
+		C5F9327527989BA600FE16B9 /* IndicatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F9327427989BA600FE16B9 /* IndicatorManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		C5F930EE278A631D00FE16B9 /* ZipCodeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipCodeManager.swift; sourceTree = "<group>"; };
 		C5F931AB278C688B00FE16B9 /* AddressEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressEntity.swift; sourceTree = "<group>"; };
 		C5F9326C2798790500FE16B9 /* ErrorMessageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessageType.swift; sourceTree = "<group>"; };
+		C5F9327427989BA600FE16B9 /* IndicatorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 				C5F9309E2789819E00FE16B9 /* InputTextView.xib */,
 				C5F930B027898C6C00FE16B9 /* RegisterButtonView.swift */,
 				C5F930B527898C7B00FE16B9 /* RegisterButtonView.xib */,
+				C5F9327427989BA600FE16B9 /* IndicatorManager.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 				C5F9326D2798790500FE16B9 /* ErrorMessageType.swift in Sources */,
 				C5F9302427830BDF00FE16B9 /* AppDelegate.swift in Sources */,
 				C5F9302627830BDF00FE16B9 /* SceneDelegate.swift in Sources */,
+				C5F9327527989BA600FE16B9 /* IndicatorManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

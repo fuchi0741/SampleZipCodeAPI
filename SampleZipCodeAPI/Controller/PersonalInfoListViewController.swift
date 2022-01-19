@@ -8,7 +8,7 @@
 import UIKit
 
 final class PersonalInfoListViewController: UIViewController {
-    
+        
     @IBOutlet private weak var tableView: UITableView! {
         didSet {
             tableView.register(cellType: PersonalInfoView.self)
