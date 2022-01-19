@@ -53,7 +53,7 @@ final class InputTextView: UIView {
     }
     
     @IBAction private func didTapSearchAddressButton(_ sender: UIButton) {
-        guard let zipCodeText = zipCodeTextField.text else { return }
+        guard let zipCodeText = zipCodeTextField.text?.trimmingCharacters(in: .whitespaces) else { return }
         searchAddressBlock?(zipCodeText)
     }
     
