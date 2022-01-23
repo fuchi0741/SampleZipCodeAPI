@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C5F09FC8279D2B4800E02B7B /* PersonalInfoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F09FC7279D2B4800E02B7B /* PersonalInfoEntity.swift */; };
 		C5F9302427830BDF00FE16B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F9302327830BDF00FE16B9 /* AppDelegate.swift */; };
 		C5F9302627830BDF00FE16B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F9302527830BDF00FE16B9 /* SceneDelegate.swift */; };
 		C5F9302827830BDF00FE16B9 /* PersonalInfoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F9302727830BDF00FE16B9 /* PersonalInfoListViewController.swift */; };
@@ -50,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C5F09FC7279D2B4800E02B7B /* PersonalInfoEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoEntity.swift; sourceTree = "<group>"; };
 		C5F9302027830BDF00FE16B9 /* SampleZipCodeAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleZipCodeAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5F9302327830BDF00FE16B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5F9302527830BDF00FE16B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 			children = (
 				C5F930EE278A631D00FE16B9 /* ZipCodeManager.swift */,
 				C5F931AB278C688B00FE16B9 /* AddressEntity.swift */,
+				C5F09FC7279D2B4800E02B7B /* PersonalInfoEntity.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -358,6 +361,7 @@
 				C5F930762783176200FE16B9 /* RegisterViewController.swift in Sources */,
 				C5F9309A2789818D00FE16B9 /* InputTextView.swift in Sources */,
 				C5F9326D2798790500FE16B9 /* ErrorMessageType.swift in Sources */,
+				C5F09FC8279D2B4800E02B7B /* PersonalInfoEntity.swift in Sources */,
 				C5F9302427830BDF00FE16B9 /* AppDelegate.swift in Sources */,
 				C5F9302627830BDF00FE16B9 /* SceneDelegate.swift in Sources */,
 				C5F9327527989BA600FE16B9 /* IndicatorManager.swift in Sources */,
