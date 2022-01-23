@@ -36,7 +36,11 @@ extension PersonalInfoListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: PersonalInfoView.className, for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: PersonalInfoView.className, for: indexPath) as? PersonalInfoView else { return UITableViewCell() }
+        let entity = PersonalInfoEntityList.list[indexPath.row]
+        cell.setPersonalInfo(name: entity.name,
+                             phoneNum: entity.phoneNum,
+                             address: entity.address)
         return cell
     }
 }

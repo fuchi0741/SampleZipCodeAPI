@@ -8,12 +8,14 @@
 import UIKit
 
 final class PersonalInfoView: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+    
+    @IBOutlet private weak var nameLabel: UILabel!
+    @IBOutlet private weak var phoneNumLabel: UILabel!
+    @IBOutlet private weak var addressLabel: UILabel!
+    
+    func setPersonalInfo(name: String, phoneNum: String, address: String) {
+        nameLabel.text = "名前:\(name)"
+        phoneNumLabel.text = "TEL:\(phoneNum)"
+        addressLabel.text = "住所:\(address)"
     }
 }
