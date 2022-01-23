@@ -52,6 +52,18 @@ final class InputTextView: UIView {
         }
     }
     
+    func addPersonalInfo() {
+        guard let name = nameTextFiled.text,
+              let phoneNum = phoneNumTextField.text,
+              let mainAddress = mainAddressTextField.text,
+              let subAddress = subAddressTextField.text else { return }
+       
+        let address = mainAddress + subAddress
+        
+        let entity = PersonalInfoEntity(name: name, phoneNum: phoneNum, address: address)
+        PersonalInfoEntityList.list.append(entity)
+    }
+    
     @IBAction private func didTapSearchAddressButton(_ sender: UIButton) {
         guard let zipCodeText = zipCodeTextField.text?.trimmingCharacters(in: .whitespaces) else { return }
         searchAddressBlock?(zipCodeText)

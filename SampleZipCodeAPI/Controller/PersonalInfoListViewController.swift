@@ -20,6 +20,11 @@ final class PersonalInfoListViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
+    
     @IBAction private func didTapAddButton(_ sender: UIBarButtonItem) {
         modalTransition(to: RegisterViewController.className)
     }
@@ -27,8 +32,7 @@ final class PersonalInfoListViewController: UIViewController {
 
 extension PersonalInfoListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //TODO: 後のタスクにて実装予定
-        10
+        PersonalInfoEntityList.list.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

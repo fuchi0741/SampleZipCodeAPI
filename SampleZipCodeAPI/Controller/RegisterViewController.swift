@@ -53,7 +53,7 @@ final class RegisterViewController: UIViewController {
     private func setupRegister() {
         registerView.registerButtonBlock = { [weak self] in
             guard let self = self else { return }
-            
+            self.inputTextView.addPersonalInfo()
             self.dismiss(animated: true, completion: nil)
         }
         

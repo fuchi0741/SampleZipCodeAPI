@@ -7,6 +7,10 @@
 
 import Foundation
 
+struct PersonalInfoEntityList {
+    static var list = [PersonalInfoEntity]()
+}
+
 struct PersonalInfoEntity {
     let name: String
     let phoneNum: String
