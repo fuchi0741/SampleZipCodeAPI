@@ -6,13 +6,14 @@
 //
 
 import Foundation
+import RealmSwift
 
 struct PersonalInfoEntityList {
     static var list = [PersonalInfoEntity]()
 }
 
-struct PersonalInfoEntity {
-    let name: String
-    let phoneNum: String
-    let address: String
+class PersonalInfoEntity: Object {
+    @Persisted var name: String
+    @Persisted var phoneNum: String
+    @Persisted var address: String
 }
