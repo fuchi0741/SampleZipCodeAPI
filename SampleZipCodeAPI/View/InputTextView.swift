@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 final class InputTextView: UIView {
     
@@ -59,9 +60,13 @@ final class InputTextView: UIView {
               let subAddress = subAddressTextField.text else { return }
        
         let address = mainAddress + subAddress
-        //TODO: 後ほど保存ができるように修正
         let entity = PersonalInfoEntity()
-        PersonalInfoEntityList.list.append(entity)
+        entity.setup(name: name, phoneNum: phoneNum, address: address)
+        
+        let realm = try! Realm()
+        try! realm.write {
+            realm.add(entity)
+        }
     }
     
     @IBAction private func didTapSearchAddressButton(_ sender: UIButton) {
