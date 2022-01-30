@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		47FE131996A8CE9D66AA7A9B /* Pods_SampleZipCodeAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EAD2B532A3B6AF34BBE7966 /* Pods_SampleZipCodeAPI.framework */; };
 		AD6F949D18E6CB8EF8D608CD /* Pods_SampleZipCodeAPI_SampleZipCodeAPIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2496BAE768156C564F39CBED /* Pods_SampleZipCodeAPI_SampleZipCodeAPIUITests.framework */; };
+		C5832D8627A67E6700DD5F96 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5832D8527A67E6700DD5F96 /* RealmManager.swift */; };
 		C5F09FC8279D2B4800E02B7B /* PersonalInfoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F09FC7279D2B4800E02B7B /* PersonalInfoEntity.swift */; };
 		C5F9302427830BDF00FE16B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F9302327830BDF00FE16B9 /* AppDelegate.swift */; };
 		C5F9302627830BDF00FE16B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F9302527830BDF00FE16B9 /* SceneDelegate.swift */; };
@@ -60,6 +61,7 @@
 		75E9DFFAD1D4917C435E281D /* Pods-SampleZipCodeAPI-SampleZipCodeAPIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleZipCodeAPI-SampleZipCodeAPIUITests.debug.xcconfig"; path = "Target Support Files/Pods-SampleZipCodeAPI-SampleZipCodeAPIUITests/Pods-SampleZipCodeAPI-SampleZipCodeAPIUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7C782DC99643D6CAC7669125 /* Pods-SampleZipCodeAPITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleZipCodeAPITests.debug.xcconfig"; path = "Target Support Files/Pods-SampleZipCodeAPITests/Pods-SampleZipCodeAPITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B92C5751184E577661088A22 /* Pods-SampleZipCodeAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleZipCodeAPI.debug.xcconfig"; path = "Target Support Files/Pods-SampleZipCodeAPI/Pods-SampleZipCodeAPI.debug.xcconfig"; sourceTree = "<group>"; };
+		C5832D8527A67E6700DD5F96 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		C5F09FC7279D2B4800E02B7B /* PersonalInfoEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoEntity.swift; sourceTree = "<group>"; };
 		C5F9302027830BDF00FE16B9 /* SampleZipCodeAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleZipCodeAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5F9302327830BDF00FE16B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 				C5F930EE278A631D00FE16B9 /* ZipCodeManager.swift */,
 				C5F931AB278C688B00FE16B9 /* AddressEntity.swift */,
 				C5F09FC7279D2B4800E02B7B /* PersonalInfoEntity.swift */,
+				C5832D8527A67E6700DD5F96 /* RealmManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -507,6 +510,7 @@
 				C5F930682783107D00FE16B9 /* PersonalInfoView.swift in Sources */,
 				C5F9302827830BDF00FE16B9 /* PersonalInfoListViewController.swift in Sources */,
 				C5F930762783176200FE16B9 /* RegisterViewController.swift in Sources */,
+				C5832D8627A67E6700DD5F96 /* RealmManager.swift in Sources */,
 				C5F9309A2789818D00FE16B9 /* InputTextView.swift in Sources */,
 				C5F9326D2798790500FE16B9 /* ErrorMessageType.swift in Sources */,
 				C5F09FC8279D2B4800E02B7B /* PersonalInfoEntity.swift in Sources */,
