@@ -9,15 +9,25 @@ import Foundation
 import RealmSwift
 
 struct RealmManager {
-    static func savePersonalInfo() {
-        /// Realmにデータを保存する
+    static func savePersonalInfo(entity: PersonalInfoEntity) {
+        do {
+            let realm = try Realm()
+            try realm.write {
+                realm.add(entity)
+            }
+        } catch {
+            print("Realmに永続化するデータ生成処理失敗")
+        }
     }
     
-    static func getSavedPersonalInfoCount() {
-        /// Realmに保存したデータの数を取得するメソッド
+    static func getSavedPersonalInfoCount() -> Int {
+        let realm = try! Realm()
+        return realm.objects(PersonalInfoEntity.self).count
     }
     
-    static func getSavedPersonalInfoEntity() {
-        /// Realmに保存したデータを取得する
+    static func getSavedPersonalInfoEntity(completion: (Results<PersonalInfoEntity>) -> Void) {
+        let realm = try! Realm()
+        let savedDataList = realm.objects(PersonalInfoEntity.self)
+        completion(savedDataList)
     }
 }
