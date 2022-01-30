@@ -60,6 +60,7 @@ final class InputTextView: UIView {
               let subAddress = subAddressTextField.text else { return }
        
         let address = mainAddress + subAddress
+        
         let entity = PersonalInfoEntity()
         entity.setup(name: name, phoneNum: phoneNum, address: address)
         

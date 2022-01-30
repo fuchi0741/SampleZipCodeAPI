@@ -8,11 +8,6 @@
 import Foundation
 import RealmSwift
 
-/// Realmに保存
-struct PersonalInfoEntityList {
-    static var list = [PersonalInfoEntity]()
-}
-
 class PersonalInfoEntity: Object {
     @Persisted var name: String
     @Persisted var phoneNum: String
